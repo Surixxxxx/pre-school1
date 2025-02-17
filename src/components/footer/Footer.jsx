@@ -11,7 +11,7 @@ const Footer = () => {
         <Grid container spacing={4}>
           {/* About Section */}
           <Grid item xs={12} md={4}>
-            <Typography  component="h2" className="main-title">
+            <Typography component="h2" className="main-title">
               Vidyarambh Balmandir
             </Typography>
             <Typography variant="body1" className="footer-text">
@@ -53,29 +53,27 @@ const Footer = () => {
 
           {/* Newsletter */}
           <Grid item xs={12} md={3}>
-            <Typography variant="h6" component="h3" className=" extra-title">
+            <Typography variant="h6" component="h3" className="extra-title">
               Stay Updated
             </Typography>
             <Box className="newsletter-section">
               <Box>
-              <TextField
-                fullWidth
-                variant="outlined"
-                placeholder="Enter your email"
-                className="newsletter-input"
-                // size="small"
-              />
+                <TextField
+                  fullWidth
+                  variant="outlined"
+                  placeholder="Enter your email"
+                  className="newsletter-input"
+                />
               </Box>
               <Box className="newsletter-btn-container">
-              <Button
-                variant="contained"
-                className="newsletter-btn"
-                fullWidth
-            
-                sx={{ mt: { xs: 1, md: 2 } }}
-              >
-                Subscribe
-              </Button>
+                <Button
+                  variant="contained"
+                  className="newsletter-btn"
+                  fullWidth
+                  sx={{ mt: { xs: 1, md: 2 } }}
+                >
+                  Subscribe
+                </Button>
               </Box>
             </Box>
           </Grid>
@@ -87,16 +85,16 @@ const Footer = () => {
             Follow Us
           </Typography>
           <Box className="social-icons icons">
-            <IconButton aria-label="#" >
-              <Facebook  />
+            <IconButton aria-label="Facebook">
+              <Facebook />
             </IconButton>
-            <IconButton aria-label="#">
+            <IconButton aria-label="Twitter">
               <Twitter />
             </IconButton>
-            <IconButton aria-label="#">
+            <IconButton aria-label="Instagram">
               <Instagram />
             </IconButton>
-            <IconButton aria-label="#">
+            <IconButton aria-label="YouTube">
               <YouTube />
             </IconButton>
           </Box>

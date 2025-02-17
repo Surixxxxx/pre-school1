@@ -22,12 +22,12 @@ function HeroSection() {
         </Box>
 
         {/* Main Heading */}
-        <Typography className="bouncy-text gradient-text" sx={{ fontSize: "80px", fontWeight: "bold" }} gutterBottom>
+        <Typography className="bouncy-text gradient-text" sx={{  fontWeight: "bold" }} gutterBottom>
           Better Future <br /><span> For Your Kids</span>
         </Typography>
         
         {/* Subtext */}
-        <Typography variant="h5" className="highlight-text" fontWeight={700} gutterBottom>
+        <Typography  className="highlight-text" fontWeight={700} gutterBottom>
           Providing quality education with love and care.
         </Typography>
         

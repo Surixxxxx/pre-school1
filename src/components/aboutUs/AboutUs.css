@@ -254,10 +254,6 @@
   .about-container {
     padding: 0 2rem !important;
   }
-  
-  /* .team-member-image {
-    height: 220px;
-  } */
 }
 
 @media (max-width: 992px) {
@@ -270,8 +266,8 @@
 
   .about-image-container,
   .about-text-container {
-    max-width: 100%;
-  
+    
+    width: 90% !important;
   }
 
   .about-points {
@@ -279,11 +275,11 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .about-team-members {
+  /* .about-team-members {
     display: grid !important;
     grid-template-columns: repeat(2, 1fr);
     justify-self: center !important;
-  }
+  } */
 }
 
 @media (max-width: 768px) {

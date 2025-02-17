@@ -10,12 +10,14 @@
   position: relative;
   font-weight: bold !important;
 }
-.footer-title{
+
+.footer-title {
   font-size: 21px !important;
   font-weight: bold !important;
   margin-bottom: 9px !important;
 }
-.extra-title{
+
+.extra-title {
   margin-top: 0 !important;
   font-weight: bold !important;
 }
@@ -63,36 +65,29 @@
   align-items: center;
   gap: 10px;
   line-height: 1.9 !important;
-  /* margin-bottom: 12px !important; */
   opacity: 0.9;
 }
 
 .newsletter-section {
-  /* margin-top: 1rem; */
   display: flex !important;
-  /* justify-content: center; */
   align-items: center;
   gap: 10px !important;
- 
 }
 
 .newsletter-input .MuiOutlinedInput-root {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 4px;
   width: 280px !important;
-  /* margin-top: 15px !important; */
   border: none !important;
   outline: none !important;
 }
 
 .newsletter-input .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
   border-color: rgba(255, 255, 255, 0.5);
-
 }
 
 .newsletter-input .MuiOutlinedInput-input {
   color: #fff;
-
 }
 
 .newsletter-btn {
@@ -113,17 +108,14 @@
 
 .social-section {
   margin-top: 2rem !important;
- 
 }
 
 .social-icons {
   margin-top: 1.5rem !important;
   justify-self: center !important;
-  
 }
 
 .social-icons .MuiIconButton-root {
-
   background-color: rgba(12, 10, 10, 0.5);
   margin: 0 8px !important;
   transition: transform 0.3s, background-color 0.3s;
@@ -147,31 +139,27 @@
   padding-top: 1.5rem !important;
 }
 
-@media (max-width: 900px) {
+@media (min-width: 900px) and (max-width: 1199px) {
   .footer {
     padding: 1.5rem 1.5rem 1.5rem !important;
   }
-  .extra-title{
+  .extra-title {
     justify-self: start !important;
     margin-bottom: 0.5rem !important;
   }
   .newsletter-section {
-    /* Ensure the container is full width and its children stretch */
     display: flex;
     flex-direction: column;
     align-items: stretch;
     width: 100%;
   }
-
   .newsletter-input {
     width: 100% !important;
     margin-bottom: 0.5rem !important;
   }
-
-
   .newsletter-input .MuiOutlinedInput-root {
     width: 100% !important;
-    box-sizing: border-box; 
+    box-sizing: border-box;
   }
   .newsletter-btn-container {
     display: flex;
@@ -179,20 +167,55 @@
   }
   .newsletter-btn {
     width: 50% !important;
-    display: block;       /* Make the button a block element */
-    margin: 0 auto;       /* Auto margins on left and right centers it */
+    display: block;
+    margin: 0 auto;
   }
-  .footer-links li{
+  .footer-links li {
     margin-bottom: 0 !important;
   }
- 
+}
+
+@media (max-width: 899px) {
+  .footer {
+    padding: 1.5rem 1.5rem 1.5rem !important;
+  }
+  .extra-title {
+    justify-self: start !important;
+    margin-bottom: 0.5rem !important;
+  }
+  .newsletter-section {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+  .newsletter-input {
+    width: 100% !important;
+    margin-bottom: 0.5rem !important;
+  }
+  .newsletter-input .MuiOutlinedInput-root {
+    width: 100% !important;
+    box-sizing: border-box;
+  }
+  .newsletter-btn-container {
+    display: flex;
+    justify-content: start !important;
+  }
+  .newsletter-btn {
+    width: 50% !important;
+    display: block;
+    margin: 0 auto;
+  }
+  .footer-links li {
+    margin-bottom: 0 !important;
+  }
 }
 
 @media (max-width: 600px) {
   .main-title {
     font-size: 1.5rem !important;
   }
-  .footer-text{
+  .footer-text {
     font-size: 1rem !important;
     margin-bottom: 0px !important;
   }
@@ -200,22 +223,20 @@
     margin-bottom: 0px !important;
     font-size: 1.1rem !important;
   }
-  
-  .footer-follow{
+  .footer-follow {
     font-size: 24px !important;
   }
   .footer-title {
     margin-top: 0rem !important;
   }
-  .contact-item{
+  .contact-item {
     font-size: 1.1rem !important;
     margin-bottom: 0px !important;
   }
-  
   .social-section {
     margin-top: 0rem !important;
   }
-  .newsletter-btn{
+  .newsletter-btn {
     letter-spacing: 1.5px !important;
     font-size: 1.3rem !important;
     height: 50px !important;
