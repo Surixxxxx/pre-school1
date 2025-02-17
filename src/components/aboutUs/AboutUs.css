@@ -263,23 +263,28 @@
     flex-direction: column;
     gap: 2rem;
   }
-
+  
   .about-image-container,
   .about-text-container {
-    
-    width: 90% !important;
+    width: 100% !important;
   }
+.about-team-members{
+  display:grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+ justify-self: center !important;
+}
+.about-team-description{
+text-align: start !important;
+}
 
   .about-points {
     display: grid !important;
     grid-template-columns: repeat(2, 1fr);
   }
-
-  /* .about-team-members {
-    display: grid !important;
-    grid-template-columns: repeat(2, 1fr);
-    justify-self: center !important;
-  } */
+.about-container{
+  padding: 10px 100px!important;
+}
+ 
 }
 
 @media (max-width: 768px) {
@@ -291,6 +296,9 @@
   .about-points-title,
   .about-team-title {
     font-size: 2rem !important;
+  }
+  .about--container{
+    padding: 10px 80px!important;
   }
 
   .about-description,
