@@ -1,11 +1,11 @@
 .hero {
   background: linear-gradient(90deg, rgb(127, 123, 198) 0%, rgba(1,146,187,1) 49%, rgba(0,212,255,1) 100%);
   padding: 20px;
-  /* width: 100vw !important; */
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .hero-container {
-  /* width: 100vw !important; */
   margin-top: 65px;
   padding: 20px;
   overflow: hidden;
@@ -14,7 +14,7 @@
   justify-content: space-around;
   background: linear-gradient(90deg, rgb(127, 123, 198) 0%, rgba(1,146,187,1) 49%, rgba(0,212,255,1) 100%);
   position: relative;
-  flex-wrap: wrap; /* Allow wrapping for small screens */
+  flex-wrap: wrap;
 }
 
 .hero-background {
@@ -34,17 +34,16 @@
 
 .toy1 {
   top: 0px;
-  left: 2%;
+  left: 5%;
   width: 120px;
 }
 
 .toy2 {
   bottom: 10px;
-  right: 2%;
+  right: 6%;
   width: 120px;
 }
 
-/* Floating animation */
 @keyframes float {
   0% { transform: translateY(0px); }
   50% { transform: translateY(-30px); }
@@ -91,12 +90,8 @@
 }
 
 @keyframes bounce {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-40px);
-  }
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-40px); }
 }
 
 .gradient-text {
@@ -119,13 +114,13 @@
   color: azure;
   font-family: sans-serif !important;
 }
+
 .custom-button {
   background-color: #ee186d !important;
   color: #ffff !important;
-  border-radius: 10px !important;
+  border-radius: 25px !important;
   font-size: 20px !important;
   padding: 6px 30px !important;
-  border-radius: 25px !important;
   transition: all 0.3s ease !important;
   box-shadow: 0 4px 15px rgba(30, 60, 114, 0.6) !important;
   text-transform: capitalize !important;
@@ -143,180 +138,72 @@
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Responsive Design */
-@media (max-width: 992px) {
-  .gradient-text{
-  font-size: 95px !important;
-  margin-bottom: 0px !important; 
+/* Grid Layout System */
+.grid-container {
+  display: grid;
+  width: 100%;
+  gap: 2rem;
+  padding: 2rem;
 }
-  .hero-container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    background: linear-gradient(90deg, rgb(127, 123, 198) 0%, rgba(1,146,187,1) 49%, rgba(0,212,255,1) 100%);
-  }
-  .highlight-text{
-    
-    font-size: 23px !important;
-     text-align: start !important;
-     margin-left: 25px !important;
-     
-  }
-  .toy1 {
-    top: 20px !important;
-    left: -4% !important;
-    width: 85px !important;
-  }
-  
-  .toy2 {
-    bottom: 20px  !important;
-    right: -4% !important;
-    width: 85px !important;
+
+/* 1200px+ - 4 columns (25% each) */
+@media (min-width: 1200px) {
+  .grid-container {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
   }
 
-  .image-container {
-    max-width: 100% !important;
-    padding: 20px !important;
-  }
-
-  .background-img {
-    max-width: 100% !important;
-  }
-
-  .custom-button {
-    margin-right: 0 !important;
-    display: flex !important;
-   justify-self: center !important;
-   
+  .grid-item {
+    padding: 1.5rem;
   }
 }
 
-@media (max-width: 768px) {
- .hero{
-  width: 100% !important;
- }
-  .hero-container {
-    width: 100% !important;
-    flex-direction: column;
-    justify-content: center;
+/* 900px - 1199px - 4 columns with proper spacing */
+@media (min-width: 900px) and (max-width: 1199px) {
+  .grid-container {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
   }
 
-  .hero-content {
-    /* width: 100% !important; */
-    padding: 10px;
-  }
-
-  .image-container {
-    max-width: 90% !important;
-    padding: 20px 0px !important;
-    justify-self: center !important;
-  }
-
-  .background-img {
-    max-width: 85% !important;
-  }
-
-  .custom-button {
-    font-size: 16px !important;
-    padding: 5px 18px !important;
-    margin-top: 10px !important;
-  }
-
-  .toy {
-    width: 60px;
-  }
-
-  .toy1 {
-    left: -6%;
-    width: 80px;
-  }
-
-  .toy2 {
-    right: -6%;
-    width: 80px;
-  }
-
-  .gradient-text {
-    font-size: 70px !important;
-    margin-top: 30px !important;
+  .grid-item {
+    padding: 1.25rem;
   }
 }
 
-@media (max-width: 480px) {
-  .toy1 {
-    top: 0px !important;
-    left: 0% !important;
-    width: 70px !important;
-  }
-  
-  .toy2 {
-    bottom: 10px  !important;
-    right: 4% !important;
-    width: 70px !important;
-  }
-  .hero {
-    background: linear-gradient(90deg, rgb(127, 123, 198) 0%, rgba(1,146,187,1) 49%, rgba(0,212,255,1) 100%);
-    padding: 15px 10px !important;
-    width: 100vw !important;
-  }
-  .hero-container {
-    padding:10px 14px !important;
-    
-  }
-  .gradient-text span {
-    padding-left: 0px !important;
-  }
-
-  .image-container {
-    /* max-width: 300px !important; */
-    /* margin-right: 35px !important; */
-    width: 100% !important;
-    padding: 11px 0 !important;
-    margin-top: 10px !important;
-    justify-self: center !important;
-    margin-bottom: 0px !important;
-  }
-
-  .background-img {
-    /* max-width: 300px !important; */
-    width: 100%;
-    justify-self: center !important;
-  }
-
-  .custom-button {
-    font-size: 17px !important;
-    padding: 9px 20px !important;
-    margin-right: 10% !important;
-    display: flex !important;
-    justify-self: center!important;
-  }
-
-  .toy {
-    width: 50px;
-  }
-
-
-  .gradient-text {
-    font-size: 41px !important;
-    margin-top: 40px !important;
-  }
-  .highlight-text {
-    margin-right: 17px !important;
-    color: azure;
-    font-size: 19px !important;
-    font-family: sans-serif !important;
+/* Below 900px - 2 columns per row */
+@media (min-width: 600px) and (max-width: 899px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
   }
  
+  .grid-item {
+    padding: 1rem;
+  }
 }
 
-/* 
-/* ... (keep your existing CSS) ... */
+/* Below 600px - Stacked layout */
+/* @media (max-width: 599px) {
+  .grid-container {
+    display: grid !important;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+  .highlight-text{
+    font-size: 10px !important;
+  }
 
+  .grid-item {
+    padding: 1rem;
+  }
+} */
+
+/* Preschool Section */
 .preschool-hero {
   display: flex !important;
   align-items: center !important;
   gap: 2rem !important;
-  padding: 2rem 2rem !important;
+  padding: 2rem !important;
   background: linear-gradient(90deg, rgb(127, 123, 198) 0%, rgba(1,146,187,1) 49%, rgba(0,212,255,1) 100%);
   position: relative !important;
   overflow: hidden;
@@ -394,7 +281,7 @@
   }
 }
 
-/* Responsive Styles */
+/* Responsive Breakpoints */
 @media (max-width: 1200px) {
   .preschool-hero {
     padding: 4rem 2rem;
@@ -408,9 +295,57 @@
   .preschool-description {
     font-size: 1rem !important;
   }
+
+  .gradient-text {
+    font-size: 70px !important;
+  }
 }
 
 @media (max-width: 992px) {
+  .gradient-text {
+    font-size: 95px !important;
+    margin-bottom: 0px !important; 
+  }
+
+  .hero-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .highlight-text {
+    font-size: 23px !important;
+    text-align: start !important;
+    margin-left: 25px !important;
+  }
+
+  .toy1 {
+    top: 20px !important;
+    left: -4% !important;
+    width: 85px !important;
+  }
+  
+  .toy2 {
+    bottom: 20px !important;
+    right: -4% !important;
+    width: 85px !important;
+  }
+
+  .image-container {
+    max-width: 100% !important;
+    padding: 20px !important;
+  }
+
+  .background-img {
+    max-width: 100% !important;
+  }
+
+  .custom-button {
+    margin-right: 0 !important;
+    display: flex !important;
+    justify-self: center !important;
+  }
+
   .preschool-hero {
     flex-direction: column;
     text-align: center;
@@ -422,13 +357,15 @@
     max-width: 100% !important;
     width: 90% !important;
   }
-.preschool-heading{
-  font-size: 40px !important;
 
-}
-.preschool-description{
-  font-size: 20px !important;
-}
+  .preschool-heading {
+    font-size: 40px !important;
+  }
+
+  .preschool-description {
+    font-size: 20px !important;
+  }
+
   .preschool-heading::after {
     left: 50%;
     transform: translateX(-50%);
@@ -440,6 +377,55 @@
 }
 
 @media (max-width: 768px) {
+  .hero {
+    width: 100% !important;
+  }
+
+  .hero-container {
+    width: 100% !important;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .hero-content {
+    padding: 10px;
+  }
+
+  .image-container {
+    max-width: 90% !important;
+    padding: 20px 0px !important;
+    justify-self: center !important;
+  }
+
+  .background-img {
+    max-width: 85% !important;
+  }
+
+  .custom-button {
+    font-size: 16px !important;
+    padding: 5px 18px !important;
+    margin-top: 10px !important;
+  }
+
+  .toy {
+    width: 60px;
+  }
+
+  .toy1 {
+    left: -6%;
+    width: 80px;
+  }
+
+  .toy2 {
+    right: -6%;
+    width: 80px;
+  }
+
+  .gradient-text {
+    font-size: 70px !important;
+    margin-top: 30px !important;
+  }
+
   .preschool-hero {
     padding: 3rem 1.5rem;
   }
@@ -448,6 +434,7 @@
     font-size: 1.5rem !important;
     margin-bottom: 0.75rem !important;
   }
+
   .preschool-heading::after {
     width: 100px !important;
     height: 3px !important;
@@ -460,9 +447,68 @@
 }
 
 @media (max-width: 480px) {
+  .toy1 {
+    top: 0px !important;
+    left: 0% !important;
+    width: 70px !important;
+  }
+  
+  .toy2 {
+    bottom: 10px !important;
+    right: 4% !important;
+    width: 70px !important;
+  }
+
+  .hero {
+    padding: 15px 10px !important;
+    width: 100vw !important;
+  }
+
+  .hero-container {
+    padding: 10px 14px !important;
+  }
+
+  .gradient-text span {
+    padding-left: 0px !important;
+  }
+
+  .image-container {
+    width: 100% !important;
+    padding: 11px 0 !important;
+    margin-top: 10px !important;
+    justify-self: center !important;
+    margin-bottom: 0px !important;
+  }
+
+  .background-img {
+    width: 100%;
+    justify-self: center !important;
+  }
+
+  .custom-button {
+    font-size: 17px !important;
+    padding: 9px 20px !important;
+    margin-right: 10% !important;
+    display: flex !important;
+    justify-self: center !important;
+  }
+
+  .gradient-text {
+    font-size: 41px !important;
+    margin-top: 40px !important;
+  }
+
+  .highlight-text {
+    margin-right: 20px !important;
+    color: azure;
+    font-size: 17px !important;
+    text-align: start !important;
+  }
+
   .preschool-hero {
     padding: 2rem 1rem;
   }
+
   .preschool-image,
   .preschool-text {
     max-width: 100% !important;
@@ -475,11 +521,13 @@
     margin-bottom: 0.6rem !important;
     justify-self: flex-start !important;
   }
+
   .preschool-heading::after {
     width: 100px !important;
     height: 2px !important;
     bottom: -3px !important;
   }
+
   .preschool-description {
     font-size: 1rem !important;
     margin-bottom: 1.3rem !important;
@@ -492,13 +540,12 @@
     font-size: 1.1rem !important;
     margin-top: 10px !important;
     display: flex !important;
-    /* border-radius: 10px !important; */
-   justify-items: flex-start !important;
-   margin-bottom: 0 !important;
+    justify-items: flex-start !important;
+    margin-bottom: 0 !important;
   }
 }
 
-/* Optional: Add a subtle parallax effect on desktop */
+/* Desktop Parallax Effect */
 @media (min-width: 993px) {
   .preschool-image {
     transform: perspective(1000px) rotateY(-5deg);
@@ -508,4 +555,40 @@
   .preschool-image:hover {
     transform: perspective(1000px) rotateY(0deg);
   }
+}
+
+/* Grid Item Styles */
+.grid-item {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.grid-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.grid-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.grid-item-content {
+  padding: 1.5rem;
+}
+
+.grid-item h3 {
+  margin: 0 0 1rem 0;
+  color: #333;
+  font-size: 1.25rem;
+}
+
+.grid-item p {
+  margin: 0;
+  color: #666;
+  line-height: 1.5;
 }

@@ -158,8 +158,14 @@
 
 /* For Small Tablets & Mobile Devices (≤768px) */
 @media (max-width: 768px) {
+  .admission{
+    margin-top: 50px !important;
+    padding: 20px 10px !important;
+   justify-self: center !important;
+    
+  }
   .admission-inquiry {
-      padding: 25px;
+      padding: 25px 0px !important;
   }
 
   .admission-title {

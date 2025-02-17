@@ -1,9 +1,9 @@
 /* Background Styling */
 .background {
     background-color: aliceblue;
-    padding: 20px 10px !important;
+    padding: 0px 50px !important;
     min-height: 100vh;
-    margin-top: 60px !important;
+    margin-top: 20px !important;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,8 +12,8 @@
 /* Contact Container */
 .contact-container {
     width: 100%;
-    max-width: 1200px;
-    padding: 10px 20px !important;
+    /* max-width: 1200; */
+    padding: 10px 30px !important;
     margin: 20px;
     border-radius: 10px;
     background: rgba(255, 255, 255, 0.938);
@@ -225,6 +225,10 @@
 
 
 @media (max-width: 820px) {
+    .background {
+        margin-top: 70px !important;
+        padding: 15px !important;
+    }
     .contact-container1 {
         flex-direction: column;
     }

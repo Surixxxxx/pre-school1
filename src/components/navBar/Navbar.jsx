@@ -71,26 +71,26 @@ function Navbar() {
 
   return (
     <AppBar position="fixed" className="navbar">
+      
       <Box className="toolbar">
-        <Box className="navmid" display="flex" justifyContent="space-evenly" alignItems="center">
-          <Box className="logo-container">
-            <Box className="logo-content">
-              <img src={vlogo} alt="Vidyarambh" className="logo" />
-              <Box className="logo-text">
-                <Typography className="logo-primary">Vidyarambh</Typography>
-                <Typography className="logo-secondary">Balmandir</Typography>
-              </Box>
-            </Box>
-          </Box>
+        <Box className="navmid" display={'flex'} justifyContent={'space-evenly'} alignItems={'center'}>
+        <Box className="logo-container">
+  <Box className="logo-content">
+    <img src={vlogo} alt="Kidzena" className="logo" />
+    <Box className="logo-text">
+      <Typography className="logo-primary">Vidyarambh</Typography>
+      <Typography className="logo-secondary">Balmandir</Typography>
+    </Box>
+  </Box>
+</Box>
 
-          <Box>
-            <IconButton className="menu-icon" onClick={handleDrawerToggle}>
-              <MenuIcon />
-            </IconButton>
-          </Box>
-        </Box>
+<Box>
+<IconButton className="menu-icon" onClick={handleDrawerToggle}>
+          <MenuIcon />
+        </IconButton>
+</Box>
+</Box>
 
-        {/* Desktop Navigation Links */}
         <Box className="nav-links">
           <Link to={"/"}>
             <Button>Home</Button>
@@ -104,36 +104,27 @@ function Navbar() {
           <Link to={"/contact"}>
             <Button>Contact</Button>
           </Link>
-          <Button onClick={handleMenuOpen} className="more-btn">
+          <Button onClick={handleMenuOpen}>
             More{" "}
             <KeyboardArrowDownIcon style={{ fontWeight: "bold", fontSize: "30px" }} />
           </Button>
           <Menu
-            anchorEl={anchorEl}
-            open={Boolean(anchorEl)}
-            onClose={handleMenuClose}
-            className={`more-menu ${anchorEl ? "menu-open" : ""}`}
-          >
-            <MenuItem onClick={() => handleScrollToSection("activities")} className="menu-item">
-              Activities
-            </MenuItem>
-            <Link className="navLink" to={"/testimonials"}>
-              <MenuItem onClick={handleMenuClose} className="menu-item">
-                Testimonials
-              </MenuItem>
-            </Link>
-            <MenuItem onClick={() => handleScrollToSection("moments-section")} className="menu-item">
-              Moments
-            </MenuItem>
-            <Link className="navLink" to={"/faqs"}>
-              <MenuItem onClick={handleMenuClose} className="menu-item">
-                FAQs
-              </MenuItem>
-            </Link>
-            <MenuItem onClick={handleMenuClose} className="menu-item">
-              Coming Soon
-            </MenuItem>
-          </Menu>
+  anchorEl={anchorEl}
+  open={Boolean(anchorEl)}
+  onClose={handleMenuClose}
+  className={`more-menu ${anchorEl ? "menu-open" : ""}`}
+>
+  <MenuItem onClick={() => handleScrollToSection("activities")} className="menu-item">Activities</MenuItem>
+  <Link className="navLink" to={"/testimonials"}>
+    <MenuItem onClick={handleMenuClose} className="menu-item">Testimonials</MenuItem>
+  </Link>
+  <MenuItem onClick={() => handleScrollToSection("moments-section")} className="menu-item">Moments</MenuItem>
+  <Link className="navLink" to={"/faqs"}>
+    <MenuItem onClick={handleMenuClose} className="menu-item">FAQs</MenuItem>
+  </Link>
+  <MenuItem onClick={handleMenuClose} className="menu-item">Coming Soon</MenuItem>
+</Menu>
+
         </Box>
 
         <Link to={"/admission"}>
@@ -141,7 +132,7 @@ function Navbar() {
             Get Started
           </Button>
         </Link>
-      </Box>
+        </Box>
 
       {/* Mobile Drawer */}
       <Drawer anchor="right" open={mobileOpen} onClose={handleDrawerToggle}>
@@ -172,6 +163,7 @@ function Navbar() {
               <ListItemText primary="Contact " />
             </Link>
           </ListItem>
+          
 
           {/* More Menu Toggle for Mobile */}
           <ListItem 
