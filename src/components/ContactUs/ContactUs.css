@@ -178,6 +178,52 @@
     }
 }
 
+@media (max-width: 1199px) and (min-width: 900px) {
+    .background {
+        margin-top: 70px !important;
+        padding: 15px !important;
+    }
+
+    .contact-container {
+        max-width: 1000px;
+        padding: 20px !important;
+        margin: 10px auto;
+    }
+
+    .contact-container1 {
+        gap: 20px !important;
+    }
+
+    .left-section,
+    .right-section {
+        flex: 1;
+        padding: 15px;
+    }
+
+    .inputs {
+        grid-template-columns: repeat(1, 1fr) !important; /* Full width inputs */
+        gap: 12px !important;
+    }
+
+    .input-field {
+        width: 100% !important;
+        margin-bottom: 12px !important;
+    }
+
+    .animated-button {
+        width: 180px !important; /* Slightly bigger for better appearance */
+    }
+
+    .contact-details p {
+        font-size: 16px !important;
+    }
+
+    .cantact-icons {
+        justify-content: start;
+    }
+}
+
+
 @media (max-width: 820px) {
     .contact-container1 {
         flex-direction: column;

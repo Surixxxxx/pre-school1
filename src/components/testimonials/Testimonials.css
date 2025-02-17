@@ -102,6 +102,36 @@
     padding: 20px 30px;
   }
 }
+@media (max-width: 1199px) and (min-width: 900px) {
+  .testimonials-container1 {
+      padding: 40px !important;
+  }
+
+  .testimonials-grid {
+  display: grid !important;
+      grid-template-columns: repeat(2, 1fr) !important; /* 2-column layout */
+     justify-self: center !important;
+      gap: 25px !important;
+      padding: 30px !important;
+  }
+
+  .testimonial-card {
+      max-width: 90% !important;
+      height: auto !important;
+      padding: 20px !important;
+      opacity: 0; /* Keep initial opacity */
+      animation-fill-mode: forwards; /* Ensure animation applies */
+  }
+
+  .testimonial-card:nth-child(odd) {
+      animation: slideInLeft 1s ease-in-out 0.3s forwards;
+  }
+
+  .testimonial-card:nth-child(even) {
+      animation: slideInRight 1s ease-in-out 0.3s forwards;
+  }
+}
+
 
 @media (max-width: 768px) {
   .testimonials-grid {

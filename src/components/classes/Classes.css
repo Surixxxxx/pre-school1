@@ -139,6 +139,46 @@
   }
 }
 
+@media (max-width: 1199px) and (min-width: 900px) {
+  .classes-page {
+    margin-top: 80px !important;
+    padding: 15px !important;
+  }
+
+  .classes-grid {
+    gap: 60px !important;
+    padding: 0px 50px !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 20px;
+  }
+
+  .class-card {
+    width: 40% !important; /* Adjusted for better fit */
+    min-width: 280px;
+    opacity: 1; /* Ensure it's visible */
+  }
+
+  .class-card:nth-child(3n+1),
+  .class-card:nth-child(3n+2),
+  .class-card:nth-child(3n+3) {
+    animation: slideFromLeft 0.8s ease-out forwards;
+  }
+
+  .class-card:nth-child(3n+4),
+  .class-card:nth-child(3n+5),
+  .class-card:nth-child(3n+6) {
+    animation: slideFromRight 0.8s ease-out forwards;
+  }
+
+  .classes-title {
+    font-size: 2.2em !important; /* Slightly smaller for this range */
+  }
+}
+
+
+
 @media (max-width: 768px) {
   .classes-grid {
       padding: 0px 20px !important;

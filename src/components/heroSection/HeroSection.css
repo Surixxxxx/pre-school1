@@ -157,12 +157,14 @@
   }
   .highlight-text{
     
-    font-size: 26px !important;
-     margin-right: 70px !important;
+    font-size: 23px !important;
+     text-align: start !important;
+     margin-left: 25px !important;
+     
   }
   .toy1 {
     top: 20px !important;
-    left: -7% !important;
+    left: -4% !important;
     width: 85px !important;
   }
   
@@ -184,8 +186,8 @@
   .custom-button {
     margin-right: 0 !important;
     display: flex !important;
-   justify-self: flex-start !important;
-   margin-left: 20px !important;
+   justify-self: center !important;
+   
   }
 }
 
