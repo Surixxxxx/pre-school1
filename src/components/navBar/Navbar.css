@@ -23,7 +23,7 @@
 }
 
 .logo {
-  height: 60px !important;
+  height: 55px !important;
   width: auto;
 }
 
@@ -34,13 +34,14 @@
   justify-self: center !important;
 }
 
+/* @font-face declaration with multiple formats */
 @font-face {
   font-family: 'Cooper Black';
-  src: url(src/assets/classes/COOPBL.TTF) format('truetype');
-       /* url('/fonts/CooperBlack.woff') format('woff'); */
+  src: url('src/assets/classes/COOPBL.TTF') format('truetype'),
+       url('src/assets/classes/COOPBL.woff2') format('woff2'), 
+       url('src/assets/classes/COOPBL.woff') format('woff'); 
   font-weight: bold !important;
   font-style: normal;
-  
 }
 
 .logo-primary {
@@ -155,7 +156,7 @@ background: linear-gradient(90deg, rgb(127, 123, 198) 0%, rgba(1,146,187,1) 49%,
 }
 
 /* lap */
-.more-menu .menu-item {
+.more-menu .menu-item  {
   opacity: 0;
   transform: translateX(-40px);
   animation: slideIn 0.5s ease-in-out forwards;
@@ -214,23 +215,52 @@ background: linear-gradient(90deg, rgb(127, 123, 198) 0%, rgba(1,146,187,1) 49%,
   animation-delay: 0.10s;
 }
 
-@keyframes fadeInButton {
-  from {
+
+
+.more-menu-item {
+  opacity: 0 ;
+  transform: translateX(-30px) ;
+  animation: slideInFromLeft 0.3s ease forwards !important;
+  animation-delay: 1s !important; /* Adjust delay as per your requirement */
+}
+
+/* Optionally, you can add keyframes for the slideInFromLeft animation */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-30px);
     opacity: 0;
-    transform: translateX(-20px);
   }
-  to {
-    opacity: 1;
+  100% {
     transform: translateX(0);
+    opacity: 1;
   }
 }
 
-.menu-button {
+.slide-in-list .MuiListItem-root {
   opacity: 0;
-  transform: translateX(-20px);
-  animation: fadeInButton 0.3s ease forwards;
-  animation-delay: 0.9s; /* Adjust delay as needed */
+  transform: translateX(-30px);  
+  animation: slideInFromLeft 0.5s ease forwards !important;
+  animation-delay: 0.5s !important; 
 }
+
+/* Keyframes for slide-in animation */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-30px); /* Start off-screen */
+    opacity: 0;  /* Start hidden */
+  }
+  100% {
+    transform: translateX(0);  /* Move to original position */
+    opacity: 1;  /* Fully visible */
+  }
+}
+
+.slide-in-list {
+  display: flex;
+  flex-direction: column;
+}
+
+
 
 
 /* Responsive Styles */
@@ -300,12 +330,12 @@ background: linear-gradient(90deg, rgb(127, 123, 198) 0%, rgba(1,146,187,1) 49%,
   .toolbar {
     padding: 0.60rem;
   }
+  .navLink{
+    color:#fff !important;
+    line-height: 1.2px !important;
+  }
 }
 
-/* Animation for mobile menu */
-/* .MuiDrawer-paper {
-  animation: slideIn 0.3s ease-out;
-} */
 
 @keyframes slideIn {
   from {

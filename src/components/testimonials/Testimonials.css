@@ -121,11 +121,11 @@
   .testimonials-grid {
     grid-template-columns: 1fr;
     gap: 15px !important;
-    padding: 10px !important;
+    padding: 5px !important;
   }
 
   .testimonial-card {
-    max-width: 90% !important;
+    max-width: 100% !important;
     height: auto !important;
     padding: 5px !important;
     justify-self: center !important;
