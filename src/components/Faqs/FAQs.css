@@ -107,7 +107,7 @@
   padding: clamp(20px, 4vw, 40px);
   background-color: aliceblue;
   border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 12px rgba(18, 18, 18, 0.4);
 }
 
 .enroll-title {
@@ -213,8 +213,8 @@
     justify-content: center !important;
   }
   .faqs-bg {
-    padding: 0px !important;
-    margin-top: 70px !important;
+    padding: 0px  !important;
+    margin-top: 75px !important;
   }
   .faqs-container{
     margin-top: 20px !important;
@@ -234,5 +234,14 @@
   .enroll-button {
     width: 100%;
     max-width: 250px;
+  }
+  .faqs-subtitle{
+    font-size: 0.9rem !important;
+  }
+  .faq-question{
+    font-size: 0.9rem !important;
+  }
+  .faq-answer{
+    font-size: 0.8rem !important;
   }
 }
