@@ -147,7 +147,90 @@
   padding-top: 1.5rem !important;
 }
 
-@media (max-width: 900px) {
+
+@media (min-width: 900px) and (max-width: 1100px) {
+  .footer {
+    padding: 1rem !important;
+  }
+
+  .footer-text {
+    font-size: 0.9rem !important;
+    /* text-align: justify !important; */
+    line-height: 1.8 !important;
+    word-break: break-word !important;
+    hyphens: auto !important;
+  }
+
+  .main-title {
+    font-size: 1.3rem !important;
+    margin-top: 15px !important;
+  }
+
+  .footer-title, .extra-title {
+    font-size: 1rem !important;
+  }
+
+  .contact-item {
+    font-size: 0.85rem !important;
+    display: flex;
+    align-items: center;
+  }
+
+  .footer-links a {
+    font-size: 0.85rem !important;
+    display: block;
+  }
+
+  .newsletter-section {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    width: 100% !important;
+  }
+
+  .newsletter-input .MuiOutlinedInput-root {
+    width: 250px  !important;
+  }
+
+  .newsletter-btn {
+    width: 100% !important;
+    margin:0 auto !important;
+    font-size: 1rem !important;
+  }
+
+  .footer-title {
+    margin-top: 1rem !important;
+  }
+  .extra-title{
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+  }
+
+  .social-section {
+    text-align: center !important;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: center !important;
+    margin-top: 1rem !important;
+  }
+
+  .social-icons .MuiIconButton-root {
+    background-color: rgba(12, 10, 10, 0.5);
+    margin: 0 5px !important;
+    transition: transform 0.3s, background-color 0.3s;
+  }
+
+  .social-icons .MuiIconButton-root:hover {
+    background-color: #ee186d !important;
+    transform: translateY(-3px);
+  }
+}
+
+
+
+@media (max-width: 899px) {
   .footer {
     padding: 1.5rem 1.5rem 1.5rem !important;
   }

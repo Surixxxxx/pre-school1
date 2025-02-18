@@ -284,6 +284,9 @@
     grid-template-columns: repeat(2, 1fr);
     justify-self: center !important;
   }
+  .team-member{
+    
+  }
 }
 
 @media (max-width: 768px) {
