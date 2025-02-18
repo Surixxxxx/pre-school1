@@ -269,7 +269,8 @@
   }
 
   .about-image-container,
-  .about-text-container {
+  .about-text-container,
+  .about-team-container {
     width: 100% !important;
   
   }
@@ -387,10 +388,13 @@ font-size: 1.5rem !important;
     text-align: left !important;
     margin-bottom: 10px !important;
   }
-
-  /* .team-member-image {
-    height: 280px;
-  } */
+  .team-member {
+    max-width: 260px !important;
+  }
+  .team-member-image{
+    width: 150px !important;
+    height: 150px !important;
+  }
 
   .about-title,
   .about-points-title,

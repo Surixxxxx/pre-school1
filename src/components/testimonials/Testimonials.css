@@ -138,7 +138,7 @@
     display: grid !important;
     grid-template-columns: 1fr !important;
     gap: 15px !important;
-    padding: 10px !important;
+    padding: 0px !important;
   }
 
   .testimonial-card {
