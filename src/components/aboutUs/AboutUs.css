@@ -301,7 +301,7 @@ font-size: 1.5rem !important;
  
 .team-member {
   text-align: center;
-  max-width: 300px !important;
+  max-width: 280px !important;
   padding: 1.3rem !important;
   height: auto !important;
   background: white;
@@ -314,6 +314,9 @@ font-size: 1.5rem !important;
 }
 
 @media (max-width: 768px) {
+  .about-content{
+    margin-top: 70px !important;
+  }
   .about-background {
     padding: 3rem 0;
   }
@@ -337,7 +340,12 @@ font-size: 1.5rem !important;
   .about-icon {
     font-size: 2rem !important;
   }
-
+  .about-team-members {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    justify-self: center !important;
+    gap: 1.5rem;
+  }
   /* .team-member-image {
     height: 200px;
   } */

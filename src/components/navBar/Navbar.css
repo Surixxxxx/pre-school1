@@ -152,7 +152,85 @@ background: linear-gradient(90deg, rgb(127, 123, 198) 0%, rgba(1,146,187,1) 49%,
   text-decoration: none;
   color: inherit;
   width: 100%;
+ text-align: start !important;
 }
+.more-menu .menu-item {
+  opacity: 0;
+  transform: translateX(-40px);
+  animation: slideIn 0.5s ease-in-out forwards;
+}
+.more-menu .menu-item:hover{
+  background: rgba(48, 209, 237, 0.2);
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes slideInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+.mobile-menu .MuiListItem-root {
+  opacity: 0;
+  transform: translateX(-30px);
+  animation: slideInFromLeft 0.3s ease forwards;
+}
+
+.mobile-menu .MuiListItem-root:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.mobile-menu .MuiListItem-root:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.mobile-menu .MuiListItem-root:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.mobile-menu .MuiListItem-root:nth-child(4) {
+  animation-delay: 0.8s;
+}
+
+.mobile-menu .MuiListItem-root:nth-child(5) {
+  animation-delay: 0.10s;
+}
+
+/* Start the More menu item visible but off-screen */
+.more-menu-item {
+  opacity: 0 ;
+  transform: translateX(-30px) ; /* Off-screen initially */
+  animation: slideInFromLeft 0.5s ease forwards !important;
+  animation-delay: 1s !important;
+}
+
+/* Keyframes for the animation */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-30px); /* Start off-screen */
+    opacity: 0; /* Start hidden */
+  }
+  100% {
+    transform: translateX(0); /* Moves to its original position */
+    opacity: 1; /* Fade in */
+  }
+}
+
 
 .slide-in-list .MuiListItem-root {
   opacity: 0;

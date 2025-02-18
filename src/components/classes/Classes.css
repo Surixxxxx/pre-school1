@@ -201,7 +201,7 @@
       width: 100% !important;
   }
 }
-@media (max-width: 480px){
+@media (max-width: 567px){
   .classes-page{
     margin-top: 70px !important;
   }

@@ -177,7 +177,7 @@
         padding: 20px;
     }
 }
-
+/* 
 @media (max-width: 1199px) and (min-width: 900px) {
     .background {
         margin-top: 70px !important;
@@ -202,7 +202,7 @@
     }
 
     .inputs {
-        grid-template-columns: repeat(1, 1fr) !important; /* Full width inputs */
+        grid-template-columns: repeat(1, 1fr) !important; 
         gap: 12px !important;
     }
 
@@ -212,7 +212,7 @@
     }
 
     .animated-button {
-        width: 180px !important; /* Slightly bigger for better appearance */
+        width: 180px !important;
     }
 
     .contact-details p {
@@ -222,12 +222,12 @@
     .cantact-icons {
         justify-content: start;
     }
-}
+} */
 
 
-@media (max-width: 820px) {
+@media (max-width: 995px) {
     .background {
-        margin-top: 70px !important;
+        margin-top: 2.5rem !important;
         padding: 15px !important;
     }
     .contact-container1 {
@@ -261,7 +261,7 @@
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 567px) {
 
     .background {
         padding: 5px 0 !important;
