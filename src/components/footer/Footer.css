@@ -2,6 +2,7 @@
   background: linear-gradient(135deg, #344e7e 0%, #4680e6 100%);
   padding: 2rem;
   color: #fff;
+  flex-shrink: 0 !important;
 }
 
 .main-title {
