@@ -530,9 +530,8 @@
   }
 
   .preschool-heading::after {
-    width: 100px !important;
-    height: 2px !important;
-    bottom: -3px !important;
+  left: 50%;
+    transform: translateX(-100%);
   }
 
   .preschool-description {
