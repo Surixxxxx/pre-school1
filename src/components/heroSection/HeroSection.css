@@ -182,21 +182,6 @@
   }
 }
 
-/* Below 600px - Stacked layout */
-/* @media (max-width: 599px) {
-  .grid-container {
-    display: grid !important;
-    grid-template-columns: 1fr;
-    gap: 1.25rem;
-  }
-  .highlight-text{
-    font-size: 10px !important;
-  }
-
-  .grid-item {
-    padding: 1rem;
-  }
-} */
 
 /* Preschool Section */
 .preschool-hero {
@@ -488,7 +473,7 @@
   .custom-button {
     font-size: 17px !important;
     padding: 9px 20px !important;
-    margin-right: 10% !important;
+    /* margin-right: 10% !important; */
     display: flex !important;
     justify-self: center !important;
   }
@@ -499,10 +484,10 @@
   }
 
   .highlight-text {
-    margin-right: 20px !important;
+    /* margin-right: 30px !important; */
     color: azure;
-    font-size: 17px !important;
-    text-align: start !important;
+    font-size: 16px !important;
+    text-align: center !important;
   }
 
   .preschool-hero {
