@@ -1,9 +1,5 @@
 
-.class-bg{
-  margin: 0 !important;
-  padding: 0 !important;
-  height: fit-content;
-}
+
 .classes-page {
   text-align: center;
   padding: 20px;
@@ -149,6 +145,7 @@
   .classes-page {
     margin-top: 80px !important;
     padding: 15px !important;
+    height: 100% !important;
   }
 
   .classes-grid {

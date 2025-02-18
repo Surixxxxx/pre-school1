@@ -14,7 +14,7 @@
   background: #f9f9f9;
   margin: 0 !important;
   padding: 0 !important;
-  height: fit-content;
+
 }
 
 .testimonials-container1 {
@@ -108,6 +108,7 @@
 @media (max-width: 1199px) and (min-width: 900px) {
   .testimonials-container1 {
       padding: 40px !important;
+      height: 100% !important;
   }
 
   .testimonials-grid {
@@ -120,7 +121,7 @@
 
   .testimonial-card {
       max-width: 100% !important;
-     width: 100% !important;
+     width: 95% !important;
       padding: 20px !important;
       opacity: 0; /* Keep initial opacity */
       animation-fill-mode: forwards; /* Ensure animation applies */

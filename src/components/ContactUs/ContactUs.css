@@ -182,6 +182,7 @@
     .background {
         margin-top: 70px !important;
         padding: 15px !important;
+        height: 100% !important;
     }
 
     .contact-container {
@@ -235,13 +236,24 @@
 
     .left-section,
     .right-section {
-        width: 100%;
+        flex: 0 !important;
+        width: 100% !important;
+        padding: 10px !important;
     }
-
+    .contact-form{
+        justify-self: start !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        width: 100% !important;
+    }
     .inputs{
         display: grid !important;
         grid-template-columns: repeat(1, 1fr);
         gap: 10px !important;
+    }
+    .title {
+        text-align: start;
+        margin-bottom: 0px !important;
     }
 
     .input-field {
