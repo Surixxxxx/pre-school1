@@ -284,9 +284,17 @@
     grid-template-columns: repeat(2, 1fr);
     justify-self: center !important;
   }
-  .team-member{
-    
-  }
+ 
+.team-member {
+  text-align: center;
+  max-width: 230px !important;
+  padding: 1.3rem !important;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
 }
 
 @media (max-width: 768px) {
