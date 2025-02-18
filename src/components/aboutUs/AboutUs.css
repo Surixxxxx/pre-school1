@@ -273,6 +273,20 @@
     width: 100% !important;
   
   }
+.about-team-description{
+font-size: 1.5rem !important;
+text-align: start !important;
+}
+.team-member-image{
+width: 240px !important;
+height: 240px !important;
+}
+.team-member-name{
+font-size: 1.5rem !important;
+}
+.team-member-role{
+  font-size: 1rem !important;
+}
 
   .about-points {
     display: grid !important;
@@ -296,6 +310,7 @@
   transition: transform 0.3s ease;
   cursor: pointer;
 }
+
 }
 
 @media (max-width: 768px) {
