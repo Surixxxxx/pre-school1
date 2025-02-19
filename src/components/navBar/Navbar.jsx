@@ -143,9 +143,9 @@ function Navbar() {
         </Box>
 
         <List className="mobile-menu">
-          <ListItem button onClick={handleDrawerToggle}>
-            <Link className="navLink" to={"/"}>
-              <ListItemText primary="Home" />
+          <ListItem button  onClick={handleDrawerToggle} >
+            <Link className="navLink" to={"/"} >
+              <ListItemText primary="Home"  />
             </Link>
           </ListItem>
           <ListItem button onClick={handleDrawerToggle}>

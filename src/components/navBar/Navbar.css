@@ -133,6 +133,7 @@ background: linear-gradient(90deg, rgb(127, 123, 198) 0%, rgba(1,146,187,1) 49%,
   color: #fff;
   font-weight: bold !important;
   width: 100%;
+
 }
 
 .more-menu {
@@ -150,10 +151,13 @@ background: linear-gradient(90deg, rgb(127, 123, 198) 0%, rgba(1,146,187,1) 49%,
 
 .navLink {
   text-decoration: none;
+  
   color: inherit;
   width: 100%;
- text-align: start !important;
+ text-align: center !important;
+ margin-right: 10px !important;
 }
+
 .more-menu .menu-item {
   opacity: 0;
   transform: translateX(-40px);
@@ -212,12 +216,17 @@ background: linear-gradient(90deg, rgb(127, 123, 198) 0%, rgba(1,146,187,1) 49%,
 }
 
 /* Start the More menu item visible but off-screen */
-.more-menu-item {
+.more-menu-item {  
   opacity: 0 ;
   transform: translateX(-30px) ; /* Off-screen initially */
   animation: slideInFromLeft 0.5s ease forwards !important;
   animation-delay: 1s !important;
 }
+.mobile-menu .navLink span {
+  font-size: 18px !important;  /* Adjust size as needed */
+  font-weight: bold ; 
+}
+
 
 /* Keyframes for the animation */
 @keyframes slideInFromLeft {
