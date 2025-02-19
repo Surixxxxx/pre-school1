@@ -143,7 +143,7 @@ function Navbar() {
         </Box>
 
         <List className="mobile-menu">
-          <ListItem button  onClick={handleDrawerToggle} >
+          <ListItem button sx={{fontSize:'19px',width:'100%'}} onClick={handleDrawerToggle} >
             <Link className="navLink" to={"/"} >
               <ListItemText primary="Home"  />
             </Link>
@@ -181,35 +181,35 @@ function Navbar() {
     <ListItem button className="navLink" onClick={() => handleScrollToSection("activities")}>
       <ListItemText 
         primary="Activities" 
-        primaryTypographyProps={{ style: { lineHeight: '0.5' } }} 
+        primaryTypographyProps={{ style: { lineHeight: '0.5',fontWeight:550 } }} 
       />
     </ListItem>
     <ListItem button onClick={handleDrawerToggle}>
       <Link className="navLink" to={"/testimonials"}>
         <ListItemText 
           primary="Testimonials" 
-          primaryTypographyProps={{ style: { lineHeight: '0.5' } }} 
+          primaryTypographyProps={{ style: { lineHeight: '0.5',fontWeight:550 } }} 
         />
       </Link>
     </ListItem>
     <ListItem button className="navLink" onClick={() => handleScrollToSection("moments-section")}>
       <ListItemText 
         primary="Moments" 
-        primaryTypographyProps={{ style: { lineHeight: '0.5' } }} 
+        primaryTypographyProps={{ style: { lineHeight: '0.5',fontWeight:550 } }} 
       />
     </ListItem>
     <ListItem button onClick={handleDrawerToggle}>
       <Link className="navLink" to={"/faqs"}>
         <ListItemText 
           primary="FAQs" 
-          primaryTypographyProps={{ style: { lineHeight: '0.5' } }} 
+          primaryTypographyProps={{ style: { lineHeight: '0.5',fontWeight:550 } }} 
         />
       </Link>
     </ListItem>
     <ListItem button className="navLink" onClick={handleDrawerToggle}>
       <ListItemText 
         primary="Coming Soon" 
-        primaryTypographyProps={{ style: { lineHeight: '0.5' } }} 
+        primaryTypographyProps={{ style: { lineHeight: '0.5',fontWeight: 550} }} 
       />
     </ListItem>
   </List>
