@@ -222,9 +222,19 @@ background: linear-gradient(90deg, rgb(127, 123, 198) 0%, rgba(1,146,187,1) 49%,
   animation: slideInFromLeft 0.5s ease forwards !important;
   animation-delay: 1s !important;
 }
+.mobile-menu .MuiListItem-root {
+  width: 60% !important;
+  margin:  0 auto !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center !important;
+}
+
 .mobile-menu .navLink span {
   font-size: 18px !important;  /* Adjust size as needed */
   font-weight: bold ; 
+  text-align: start !important;
 }
 
 
