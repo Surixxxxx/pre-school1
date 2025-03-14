@@ -12,6 +12,7 @@
   width: 100%;
 }
 
+
 .logo-container {
   flex-shrink: 0;
 }
@@ -137,12 +138,13 @@ background: linear-gradient(90deg, rgb(127, 123, 198) 0%, rgba(1,146,187,1) 49%,
 }
 
 .more-menu {
-  margin-top: 0.5rem;
+  margin-top: 0.5rem !important;
 }
 
 .menu-item {
   color: #1e3c72;
   min-width: 150px;
+  
 }
 
 .menu-item:hover {

@@ -2,6 +2,7 @@ import React from "react";
 import { Box, Typography, Container } from "@mui/material";
 import "./AboutUs.css";
 import kid2 from "../../assets/kid2.avif";
+import pic8 from "../../assets/picsM/pic8.jpg"
 import kidsGrp from "../../assets/kidsGrp.avif";
 import teacher1 from "../../assets/teacher1.avif";
 import teacher2 from "../../assets/teacher2.avif";
@@ -18,7 +19,7 @@ function AboutUs() {
         <Box className="about-content">
           {/* Image Section */}
           <Box className="about-image-container">
-            <img src={kidsGrp} alt="About Us" className="about-image" />
+            <img src={pic8} alt="About Us" className="about-image" />
           </Box>
 
           {/* Text Section */}

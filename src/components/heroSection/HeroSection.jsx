@@ -2,6 +2,8 @@ import React from "react";
 import { Box, Typography, Button, Divider } from "@mui/material";
 import "./HeroSection.css";
 import kid1 from "../../assets/kid1.avif";
+import pic1 from "../../assets/picsM/pic1.jpg"
+import pic2 from "../../assets/picsM/pic2.jpg"
 import toy1 from "../../assets/toy1.png"; 
 import toy2 from "../../assets/toy2.png";
 import kidsbg from "../../assets/kidsGrp11-bg.png"
@@ -38,7 +40,7 @@ function HeroSection() {
 
       {/* Kid Image Section */}
       <Box className="image-container" marginTop={5}>
-        <img src={kid1} className="background-img shadow-img" alt="kid" />
+        <img src={pic1} className="background-img shadow-img" alt="kid" />
       </Box>
     </Box>
 
@@ -47,7 +49,7 @@ function HeroSection() {
       {/* Image Section */}
       <Box
         component="img"
-        src={kidsGrp8}
+        src={pic2}
         alt="Preschool"
         className="preschool-image"
       />

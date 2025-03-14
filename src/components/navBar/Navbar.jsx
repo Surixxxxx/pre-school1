@@ -115,13 +115,10 @@ function Navbar() {
   className={`more-menu ${anchorEl ? "menu-open" : ""}`}
 >
   <MenuItem onClick={() => handleScrollToSection("activities")} className="menu-item">Activities</MenuItem>
-  <Link className="navLink" to={"/testimonials"}>
-    <MenuItem onClick={handleMenuClose} className="menu-item">Testimonials</MenuItem>
-  </Link>
-  <MenuItem onClick={() => handleScrollToSection("moments-section")} className="menu-item">Moments</MenuItem>
-  <Link className="navLink" to={"/faqs"}>
-    <MenuItem onClick={handleMenuClose} className="menu-item">FAQs</MenuItem>
-  </Link>
+ 
+  <MenuItem onClick={() => handleScrollToSection("moments-section")} className="menu-item">Moments</MenuItem> 
+  <MenuItem component={Link} to="/testimonials" onClick={handleMenuClose} className="menu-item">Testimonials</MenuItem>
+  <MenuItem component={Link} to="/faqs" onClick={handleMenuClose} className="menu-item">FAQs</MenuItem>
   <MenuItem onClick={handleMenuClose} className="menu-item">Coming Soon</MenuItem>
 </Menu>
 

@@ -5,15 +5,22 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./Gallery.css"; // Custom styles
 
-import img1 from "../../assets/kidsGrp.avif";
-import img2 from "../../assets/kidGrp1.avif";
-import img3 from "../../assets/kidsGrp3.avif";
-import img4 from "../../assets/kidsGrp4.avif";
-import img5 from "../../assets/kidsGrp5.avif";
-import img6 from "../../assets/kidsGrp6.avif";
-import img7 from "../../assets/kidsGrp8.avif";
+import pic1 from "../../assets/picsM/pic1.jpg"
+import pic2 from "../../assets/picsM/pic2.jpg"
+// import pic4 from "../../assets/picsM/pic4.jpg"
+import pic5 from "../../assets/picsM/pic5.jpg"
+import pic6 from "../../assets/picsM/pic7.jpg"
+import pic8 from "../../assets/picsM/pic8.jpg"
+import pic9 from "../../assets/picsM/pic9.jpg"
+// import img1 from "../../assets/kidsGrp.avif";
+// import img2 from "../../assets/kidGrp1.avif";
+// import img3 from "../../assets/kidsGrp3.avif";
+// import img4 from "../../assets/kidsGrp4.avif";
+// import img5 from "../../assets/kidsGrp5.avif";
+// import img6 from "../../assets/kidsGrp6.avif";
+// import img7 from "../../assets/kidsGrp8.avif";
 
-const images = [img1, img2, img3, img4, img5, img6, img7];
+const pics = [pic1, pic2,  pic5, pic6,  pic8,pic9];
 
 function Gallery() {
   const settings = {
@@ -36,7 +43,7 @@ function Gallery() {
       <Typography variant="h3" className="gallery-title">Our Moments</Typography>
       <Box className="gallery-container">
         <Slider {...settings}>
-          {images.map((img, index) => (
+          {pics.map((img, index) => (
             <Box key={index} className="gallery-slide">
               <img src={img} alt={`Gallery ${index + 1}`} className="gallery-image" />
             </Box>
