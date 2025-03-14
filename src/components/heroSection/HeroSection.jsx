@@ -11,6 +11,7 @@ import kidsGrp8 from "../../assets/kidsGrp8.avif"
 import { Link } from "react-router-dom";
 import Gallery from "../gallery/Gallery";
 import Activities from "../activities/Activities";
+import WhyUs from "../whyUs/WhyUs";
 
 function HeroSection() {
   return (
@@ -43,6 +44,8 @@ function HeroSection() {
         <img src={pic1} className="background-img shadow-img" alt="kid" />
       </Box>
     </Box>
+    
+    <WhyUs/>
 
 
    <Box className="preschool-hero">
@@ -60,9 +63,8 @@ function HeroSection() {
           About Preschool
         </Typography>
         <Typography variant="body1" className="preschool-description">
-          We provide a safe, nurturing environment where children can learn, grow, 
-          and develop essential life skills. <br /> Our focus is on early childhood education 
-          and emotional well-being.
+        Holistic development encompassing academics, creative arts, sports, and social-emotional skills.
+        Which includes,Early literacy and numeracy skills, along with personality development.
         </Typography>
 
         <Typography variant="h4" className="preschool-heading">

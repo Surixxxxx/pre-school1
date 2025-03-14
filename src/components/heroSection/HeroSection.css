@@ -1,13 +1,13 @@
 .hero {
   background: linear-gradient(90deg, rgb(127, 123, 198) 0%, rgba(1,146,187,1) 49%, rgba(0,212,255,1) 100%);
-  padding: 20px;
+  padding: 0px;
   width: 100%;
   overflow-x: hidden;
 }
 
 .hero-container {
   margin-top: 65px;
-  padding: 20px;
+  padding: 40px;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -319,6 +319,7 @@
   .image-container {
     max-width: 100% !important;
     padding: 30px !important;
+   
   }
 
   .background-img {
@@ -382,21 +383,18 @@
     padding: 10px;
   }
 
-  .image-container {
-    max-width: 90% !important;
+  /* .image-container {
+    max-width: 100% !important;
     padding: 20px 0px !important;
     justify-self: center !important;
-  }
+  
+  } */
 
-  .background-img {
-    max-width: 85% !important;
-    height: 50vh;
-  }
-
+  
   .custom-button {
-    font-size: 16px !important;
-    padding: 5px 18px !important;
-    margin-top: 10px !important;
+    font-size: 25px !important;
+    padding: 15px 46px !important;
+    margin: 20px !important;
   }
 
   .toy {
@@ -412,10 +410,14 @@
     right: -6%;
     width: 80px;
   }
+  .highlight-text{
+    font-size: 1.5rem !important;
+  }
 
   .gradient-text {
-    font-size: 70px !important;
-    margin-top: 30px !important;
+    font-size: 80px !important;
+    margin: 20px !important;
+    
   }
 
   .preschool-hero {
@@ -423,21 +425,21 @@
   }
 
   .preschool-heading {
-    font-size: 1.5rem !important;
+    font-size: 2rem !important;
     margin-bottom: 0.75rem !important;
   }
 
   .preschool-heading::after {
-    width: 80px !important;
+    width: 100px !important;
     height: 3px !important;
     bottom: -4px !important;
   }
 
   .preschool-text {
-    padding: 1rem;
+    padding: 0rem;
   }
   .preschool-description {
-    
+    font-size: 1.5rem !important;
     text-align: left !important;
   }
   .image-container {
@@ -449,11 +451,12 @@
   }
 
   .background-img {
-    width: 90%;
-    justify-self: center !important;
-  }
+      max-width: 90% !important;
+    height: 40vh;
+    margin-top: 20px;
+    margin-bottom: 20px !important;
 } 
-
+ }
 @media (max-width: 568px) {
   .toy1 {
     top: 0px !important;
@@ -468,30 +471,37 @@
   }
 
   .hero {
-    padding: 15px 10px !important;
+    padding: 0px !important;
     width: 100vw !important;
+    
+
   }
 
   .hero-container {
-    padding: 10px 14px !important;
+    padding: 10px 0 !important;
+ 
   }
 
   .gradient-text span {
     padding-left: 0px !important;
+   
   }
 
+
   .image-container {
-    width: 100% !important;
+    width: 95% !important;
     padding: 11px 0 !important;
-    margin-top: 10px !important;
+    margin-top: 30px !important;
     justify-self: center !important;
-    margin-bottom: 0px !important;
+    margin-bottom: 45px !important;
+    height: 50vh !important;
   }
 
   .background-img {
-    width: 90%;
+    width:90% !important;
     justify-self: center !important;
-    height: 35vh;
+    height: 38vh !important;
+   
   }
 
   .custom-button {
@@ -499,13 +509,16 @@
     padding: 9px 20px !important;
     /* margin-right: 10% !important; */
     display: flex !important;
-    justify-self: center !important;
+    justify-self: center !important; 
+      margin: 0px !important;
+    
   }
 
   .gradient-text {
     font-size: 38px !important;
     margin-top: 40px !important;
     text-align: center !important;
+    margin-bottom: 0 !important;
   }
 
   .highlight-text {
@@ -516,7 +529,7 @@
   }
 
   .preschool-hero {
-    padding: 2rem 1rem;
+    padding: 2rem 0.95rem !important;
   }
 
   .preschool-image,
@@ -524,6 +537,7 @@
     max-width: 100% !important;
     width: 100% !important;
     margin-bottom: 0 !important;
+    padding: 0 !important;
   }
 
   .preschool-heading {
@@ -538,7 +552,7 @@
   }
 
   .preschool-description {
-    font-size: 1rem !important;
+    font-size: 1.2rem !important;
     margin-bottom: 1.3rem !important;
     text-align: left !important;
   }

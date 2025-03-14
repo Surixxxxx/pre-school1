@@ -1,0 +1,91 @@
+.why-us-container {
+    width: 100% !important;
+    text-align: center !important;
+    padding: 40px 60px !important;
+    background-color: #d81b60 !important; /* Adjust to match your theme */
+    color: white !important;
+  }
+  
+  .feature-box {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    padding: 20px !important;
+    border-radius: 10px !important;
+    transition: transform 0.3s ease-in-out !important;
+  }
+  
+  .feature-text {
+    font-size: 1.2rem !important;
+    font-weight: bold !important;
+  }
+  
+  .feature-box:hover {
+    transform: scale(1.05) !important;
+  }
+  
+  .feature-icon {
+    background-color: white !important;
+    color: #d81b60 !important; /* Adjust icon color */
+    border-radius: 50% !important;
+    padding: 15px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin-bottom: 10px !important;
+  }
+  
+  .feature-icon svg {
+    font-size: 3rem !important;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 900px) {
+    .why-us-container{
+        margin-top: 40px !important;
+    }
+    .feature-box {
+      padding: 15px !important;
+    }
+    .feature-icon svg {
+      font-size: 2.5rem !important;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .why-us-container {
+      padding: 30px 20px !important;
+    }
+    .feature-box {
+      padding: 10px !important;
+    }
+    .feature-icon svg {
+      font-size: 2rem !important;
+    }
+  }
+  
+  /* 400px Screen */
+  @media (max-width: 400px) {
+    .why-us-container {
+      padding: 20px 10px !important;
+    }
+    .feature-box {
+      padding: 8px !important;
+    }
+    .feature-text {
+      font-size: 1rem !important;
+    }
+    .feature-icon {
+      padding: 20px !important;
+    }
+    .feature-icon svg {
+      font-size: 1.8rem !important;
+    }
+  }
+  @media (max-width: 600px) {
+    .MuiGrid-item.why-main-grid {
+      flex-basis: 50% !important;
+      max-width: 50% !important;
+    }
+  }
