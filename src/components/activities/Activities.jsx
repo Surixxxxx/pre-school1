@@ -16,7 +16,7 @@ const Activities = () => {
   return (
     <Box id="activities">
          <Typography justifySelf={'center'} fontWeight={'bold'} fontSize={50} color="#fff">
-            Activities
+            Services
         </Typography>
 
     <Box className="activities-wrapper" >

@@ -40,7 +40,7 @@ function FourCsPage() {
                 color: '#2c3e50',
                 justifySelf:'center',
                 marginBottom: 3,
-                fontSize: { xs: '2rem', md: '3rem' }
+                fontSize: { xs: '1.8rem', md: '3rem' }
               }}>
               The 4C's of Learning
             </Typography>

@@ -3,6 +3,8 @@ import { Box, Typography, Button, Divider } from "@mui/material";
 import "./HeroSection.css";
 import kid1 from "../../assets/kid1.avif";
 import pic1 from "../../assets/picsM/pic1.jpg"
+import first from "../../assets/picsM/1st.webp"
+import sec from "../../assets/picsM/sec.webp"
 import pic2 from "../../assets/picsM/pic2.jpg"
 import toy1 from "../../assets/toy1.png"; 
 import toy2 from "../../assets/toy2.png";
@@ -13,6 +15,7 @@ import Gallery from "../gallery/Gallery";
 import Activities from "../activities/Activities";
 import WhyUs from "../whyUs/WhyUs";
 import FourCsPage from "../FourCsPage/FourCsPage"
+import ActivityLab from "../Activitylab/ActivityLab";
 
 function HeroSection() {
   return (
@@ -42,7 +45,7 @@ function HeroSection() {
 
       {/* Kid Image Section */}
       <Box className="image-container" marginTop={5}>
-        <img src={pic1} className="background-img shadow-img" alt="kid" />
+        <img src={first} className="background-img shadow-img" alt="kid" />
       </Box>
     </Box>
     
@@ -53,7 +56,7 @@ function HeroSection() {
       {/* Image Section */}
       <Box
         component="img"
-        src={pic2}
+        src={sec}
         alt="Preschool"
         className="preschool-image"
       />
@@ -85,11 +88,12 @@ function HeroSection() {
       </Box>
     </Box>
   {/* Gallery */}
+  <ActivityLab/>
+
       <Gallery/>
       {/* Activities */}
     <Activities/>  
-    {/* FourCspage */}
-    <FourCsPage/>
+  
       </Box>
   );
 }

@@ -490,7 +490,7 @@
 
   .image-container {
     width: 95% !important;
-    padding: 11px 0 !important;
+    padding: 10px 0 !important;
     margin-top: 10px !important;
     justify-self: center !important;
     margin-bottom: 35px !important;
@@ -505,7 +505,7 @@
   }
 
   .custom-button {
-    font-size: 17px !important;
+    font-size: 15px !important;
     padding: 9px 20px !important;
     /* margin-right: 10% !important; */
     display: flex !important;

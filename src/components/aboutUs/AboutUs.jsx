@@ -10,6 +10,8 @@ import teacher3 from "../../assets/teacher3.avif";
 import img5 from "../../assets/classes/parent5.jpg";
 import CustomContainer from "../Container/CustomContainer";
 import { Book, EmojiEmotions, EmojiPeople, Home, Palette, School, SocialDistanceTwoTone } from "@mui/icons-material";
+import FourCsPage from "../FourCsPage/FourCsPage";
+import thir from "../../assets/picsM/thir.webp"
 
 function AboutUs() {
   return (
@@ -19,7 +21,7 @@ function AboutUs() {
         <Box className="about-content">
           {/* Image Section */}
           <Box className="about-image-container">
-            <img src={pic8} alt="About Us" className="about-image" />
+            <img src={thir} alt="About Us" className="about-image" />
           </Box>
 
           {/* Text Section */}
@@ -68,6 +70,8 @@ function AboutUs() {
             </li>
           </ul>
         </Box>
+          {/* FourCspage */}
+            <FourCsPage/>
 
         {/* Team Introduction Section */}
         <Box className="about-team-container">
