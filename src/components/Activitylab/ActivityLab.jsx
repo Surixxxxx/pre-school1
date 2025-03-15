@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Grid, Card, CardContent, Typography, Box, Button } from '@mui/material';
 import { Palette, MusicNote, Science, Favorite, Star, MenuBook } from '@mui/icons-material';
-import './activityLab.css';
+import './Activitylab.css';
 import activity from "../../assets/picsM/activitylab.webp"
 
 const activities = [
