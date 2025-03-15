@@ -1,37 +1,49 @@
-import React from "react";
-import { Box, Grid, Typography } from "@mui/material";
-import { Bedtime, Sanitizer, Person, ChildCare, People, House, PhoneAndroid, School, Psychology, AccessTime } from "@mui/icons-material";
-import "./WhyUs.css";
+import React from 'react';
+import {
+  CheckCircle,
+  Groups,
+  Extension,
+  Psychology,
+  School,
+  Science,
+  Sports,
+} from '@mui/icons-material';
+import './WhyUs.css'; // Import the CSS file
 
-const features = [
-  { icon: <Bedtime fontSize="large" />, text: "Child-friendly Ambience" },
-  { icon: <Sanitizer fontSize="large" />, text: "Safety and Hygiene" },
-  { icon: <Person fontSize="large" />, text: "Trained and Experienced Staff" },
-  { icon: <ChildCare fontSize="large" />, text: "Age-appropriate Activities" },
-  { icon: <People fontSize="large" />, text: "Teacher Student Ratio" },
-  { icon: <House fontSize="large" />, text: "Intercity Student Transfer" },
-  { icon: <School fontSize="large" />, text: "Main School Tie-ups" },
-  { icon: <Psychology fontSize="large" />, text: "Mindful Learning Approach" },
- 
+const benefits = [
+  { icon: <CheckCircle />, text: "A Child-Centric Curriculum" },
+  { icon: <Groups />, text: "Activity-Based Learning" },
+  { icon: <Extension />, text: "Scientifically Designed Learning Materials" },
+  { icon: <School />, text: "Well-Trained Teachers" },
+  { icon: <Psychology />, text: "Solid Foundation in English, Maths, Science & Culture" },
+  { icon: <Science />, text: "Focus on Science & Culture" }, // New benefit
+  { icon: <Sports />, text: "Play-way Teaching Methodology" } // New benefit
 ];
 
 const WhyUs = () => {
   return (
-    <Box className="why-us-container">
-      <Typography variant="h4" fontWeight="bold" gutterBottom>
-        Why Choose Us?
-      </Typography>
-      <Grid container spacing={4} justifyContent="center">
-        {features.map((feature, index) => (
-          <Grid item xs={12} sm={6} md={4} lg={3} key={index} className="why-main-grid">
-            <Box className="feature-box">
-              <Box className="feature-icon">{feature.icon}</Box>
-              <Typography className="feature-text">{feature.text}</Typography>
-            </Box>
-          </Grid>
+    <div className="why-us-container">
+      <h2>Why Choose Vidyarambh?</h2>
+
+      {/* Benefits Section */}
+      <h3>Our Benefits</h3>
+      <div className="benefits-grid">
+        {benefits.map((benefit, index) => (
+          <div key={index} className="benefit-box">
+            <div className="benefit-icon">{benefit.icon}</div>
+            <div className="benefit-text">{benefit.text}</div>
+          </div>
         ))}
-      </Grid>
-    </Box>
+      </div>
+
+      {/* Programs Section */}
+      <h3>Our Programs</h3>
+      <div className="programs">
+        {['Playgroup', 'Nursery', 'LKG', 'UKG', 'Day Care'].map((program, index) => (
+          <span key={index}>{program}</span>
+        ))}
+      </div>
+    </div>
   );
 };
 

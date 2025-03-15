@@ -21,11 +21,12 @@
   display: flex;
   align-items: center;
   /* gap: 0.1rem; */
+  padding: 0 !important;
 }
 
 .logo {
-  height: 60px !important;
-  width: auto;
+  height: 75px !important;
+  width: 130px !important;
 }
 
 .logo-text {

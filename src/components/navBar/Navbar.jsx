@@ -20,7 +20,7 @@ import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { Link as ScrollLink, scroller } from "react-scroll";
 
-import vlogo from "../../assets/classes/v-logo1.png";
+import vlogo from "../../assets/picsM/logo-webp.webp";
 import "./Navbar.css";
 
 function Navbar() {
@@ -77,12 +77,13 @@ function Navbar() {
         <Box className="logo-container">
   <Box className="logo-content">
     <img src={vlogo} alt="Kidzena" className="logo" />
-    <Box className="logo-text">
+    {/* <Box className="logo-text">
       <Typography className="logo-primary">Vidyarambh</Typography>
       <Typography className="logo-secondary">Balmandir</Typography>
-    </Box>
+    </Box> */}
   </Box>
 </Box>
+
 
 <Box>
 <IconButton className="menu-icon" onClick={handleDrawerToggle}>

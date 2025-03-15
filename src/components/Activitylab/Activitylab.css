@@ -1,180 +1,146 @@
 .activity-lab {
-    min-height: 100vh !important;
-    background: linear-gradient(135deg, #fff6e5 0%, #ffecd2 100%) !important;
-    padding: 20px 0 !important;
-    margin: 20px 0 !important;
+  padding: 1.5rem 0;
+  background-color: #fef2f2;
+}
+
+.header-lab-section {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.main-title-lab {
+  color: #1a1a1a;
+  font-size: 3rem !important;
+  font-weight: 700 !important;
+  margin-bottom: 1rem !important;
+}
+
+.subtitle-lab {
+  color: #4a4a4a;
+  font-size: 1.5rem !important;
+  margin-bottom: 1rem !important;
+}
+
+.age-group {
+  color: #666;
+  font-size: 1.25rem !important;
+  background-color: #f3d4d4;
+  display: inline-block;
+  padding: 0.5rem 2rem;
+  border-radius: 25px;
+  margin-top: 1rem !important;
+}
+
+.featured-image-container {
+  margin-bottom: 4rem;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.featured-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover !important;
+}
+
+.activity-lab-card {
+  height: 100%;
+  transition: transform 0.3s ease;
+  border-radius: 15px !important;
+  overflow: hidden;
+}
+
+.activity-lab-card:hover {
+  transform: translateY(-5px);
+}
+
+.activity-lab-image-container {
+  height: 200px;
+  overflow: hidden;
+}
+
+.activity-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover !important;
+  transition: transform 0.3s ease;
+}
+
+.activity-lab-card:hover .activity-image {
+  transform: scale(1.05);
+}
+
+.activity-lab-content {
+  padding: 1.5rem !important;
+  text-align: center;
+}
+
+.icon-container {
+  margin-bottom: 0.5rem;
+  color: #e91e63;
+}
+
+.activity-title {
+  color: #1a1a1a;
+  margin-bottom: 0.75rem !important;
+  font-weight: 600 !important;
+}
+
+.activity-description {
+  color: #666;
+  margin-bottom: 1.5rem !important;
+  line-height: 1.6 !important;
+}
+
+.learn-more-btn {
+  background-color: #e91e63 !important;
+  color: white !important;
+  padding: 0.5rem 2rem !important;
+  border-radius: 25px !important;
+  text-transform: none !important;
+  font-size: 1rem !important;
+}
+
+.learn-more-btn:hover {
+  background-color: #d81557 !important;
+}
+
+.contact-section {
+  margin-top: 4rem;
+  text-align: center;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.contact-title {
+  color: #1a1a1a;
+  margin-bottom: 1rem !important;
+  font-weight: 600 !important;
+}
+
+/* .contact-details {
+  color: #666;
+  l */
+
+@media (max-width: 900px) {
+  .features-grid, .benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
-  
-  .header-lab-section{
-    text-align: center !important;
-    margin-bottom: 40px !important;
+}
+
+@media (max-width: 600px) {
+  .features-grid, .benefits-grid {
+    grid-template-columns: repeat(1, 1fr);
   }
-  
-  .main-title-lab {
-    font-size: 4rem !important;
-    font-weight: 800 !important;
-    color: #2e1760 !important;
-    margin-bottom: 16px !important;
-    background: linear-gradient(45deg, #2e1760, #6b46c1) !important;
-    -webkit-background-clip: text !important;
-    -webkit-text-fill-color: transparent !important;
+  h2 {
+    font-size: 2.5rem;
   }
-  
-  .subtitle-lab {
-    color: #4a5568 !important;
-    font-weight: 500 !important;
-  }
-  
-  .featured-image-container {
-    margin-bottom: 60px !important;
-    border-radius: 20px !important;
-    overflow: hidden !important;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3) !important;
-  }
-  
-  .featured-image {
-    width: 100% !important;
-    height: 400px !important;
-    object-fit: cover !important;
-    transition: transform 0.5s ease !important;
-  }
-  
-  .featured-image:hover {
-    transform: scale(1.02) !important;
-  }
-  
-  .activities-grid {
-    margin-top: 20px !important;
-  }
-  
-  .activity-lab-card {
-    height:470px !important;
-    border-radius: 16px !important;
-    overflow: hidden !important;
-    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
-    background: rgba(255, 255, 255, 0.9) !important;
-    padding: 0 !important;
-  }
-  
-  .activity-card:hover {
-    transform: translateY(-8px) !important;
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15) !important;
-  }
-  
-  .activity-lab-image-container {
-    height: 220px !important;
-    overflow: hidden !important;
-    border-radius: 10px 10 0px 0px !important;
-  }
-  
-  .activity-image {
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: cover !important;
-    transition: transform 0.5s ease !important;
-  }
-  
-  .activity-lab-card:hover .activity-image {
-    transform: scale(1.1) !important;
-  }
-  
-  .activity-lab-content {
-    padding: 14px !important;
-    text-align: center !important;
-  }
-  
-  .icon-container {
-    background: linear-gradient(45deg, #6b46c1, #2e1760) !important;
-    color: white !important;
-    width: 60px !important;
-    height: 60px !important;
-    border-radius: 50% !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    justify-self: center !important;
-    /* margin:  auto 20px !important; */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1) !important;
+  h3 {
+    font-size: 1.75rem;
   }
  
-  .activity-title {
-    color: #2d3748 !important;
-    font-weight: 700 !important;
-    margin-bottom: 12px !important;
-  }
-  
-  .activity-description {
-    color: #4a5568 !important;
-    margin-bottom: 24px !important;
-    line-height: 1.6 !important;
-  }
-  
-  .learn-more-btn {
-    background: linear-gradient(45deg, #6b46c1, #2e1760) !important;
-    color: white !important;
-    text-transform: none !important;
-    padding: 8px 24px !important;
-    border-radius: 25px !important;
-    transition: transform 0.2s ease !important;
-  }
-  
-  .learn-more-btn:hover {
-    transform: translateY(-2px) !important;
-  }
-  
-  /* Responsive Breakpoints */
-  @media (max-width: 900px) {
-    .main-title {
-      font-size: 3rem !important;
-    }
-  
-    .featured-image {
-      height: 300px !important;
-    }
-  }
-  
-  @media (max-width: 800px) {
-    .activity-lab {
-      padding: 30px 0 !important;
-    }
-  
-    .featured-image-container {
-      margin-bottom: 40px !important;
-    }
-  }
-  
-  @media (max-width: 600px) {
-    .main-title {
-      font-size: 2.5rem !important;
-    }
-  
-    .subtitle {
-      font-size: 1.5rem !important;
-    }
-  
-    .featured-image {
-      height: 250px !important;
-    }
-  
-    .activity-lab-card {
-      margin-bottom: 20px !important;
-    }
-  }
-  
-  @media (max-width: 400px) {
-    .main-title-lab {
-      font-size: 2rem !important;
-    }
-  
-    .subtitle-lab {
-      font-size: 1.2rem !important;
-    }
-  
-    .featured-image {
-      height: 200px !important;
-    }
-  
-    .activity-lab-image-container {
-      height: 180px !important;
-    }
-  }
+ 
+}
