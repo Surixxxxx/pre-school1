@@ -491,9 +491,9 @@
   .image-container {
     width: 95% !important;
     padding: 11px 0 !important;
-    margin-top: 30px !important;
+    margin-top: 10px !important;
     justify-self: center !important;
-    margin-bottom: 45px !important;
+    margin-bottom: 35px !important;
     height: 50vh !important;
   }
 
@@ -524,7 +524,7 @@
   .highlight-text {
     /* margin-right: 30px !important; */
     color: azure;
-    font-size: 16px !important;
+    font-size: 14px !important;
     text-align: center !important;
   }
 

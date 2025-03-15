@@ -12,6 +12,7 @@ import { Link } from "react-router-dom";
 import Gallery from "../gallery/Gallery";
 import Activities from "../activities/Activities";
 import WhyUs from "../whyUs/WhyUs";
+import FourCsPage from "../FourCsPage/FourCsPage"
 
 function HeroSection() {
   return (
@@ -87,6 +88,8 @@ function HeroSection() {
       <Gallery/>
       {/* Activities */}
     <Activities/>  
+    {/* FourCspage */}
+    <FourCsPage/>
       </Box>
   );
 }
