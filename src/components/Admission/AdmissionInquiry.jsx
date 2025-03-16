@@ -12,7 +12,6 @@ const programs = [
   { name: "Day Care", color: "#ff9800" } // Orange
 ];
 
-
 const AdmissionInquiry = () => {
   return (
     <Box className="admission">
@@ -31,19 +30,19 @@ const AdmissionInquiry = () => {
             Programs Offered:
           </Typography>
           <Box className="programs-list">
-      {programs.map((program, index) => (
-        <Box 
-          key={index}
-          className="program-item"
-          sx={{ backgroundColor: program.color }}
-        >
-          <Star className="program-icon" />
-          <Typography variant="body1" className="program-text">
-            {program.name}
-          </Typography>
-        </Box>
-      ))}
-    </Box>
+            {programs.map((program, index) => (
+              <Box
+                key={index}
+                className="program-item"
+                sx={{ backgroundColor: program.color }}
+              >
+                <Star className="program-icon" />
+                <Typography variant="body1" className="program-text">
+                  {program.name}
+                </Typography>
+              </Box>
+            ))}
+          </Box>
         </Box>
         <Box className="inquiry-form">
           <Typography variant="h5" className="form-title">
@@ -69,4 +68,3 @@ const AdmissionInquiry = () => {
 };
 
 export default AdmissionInquiry;
-

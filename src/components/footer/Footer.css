@@ -51,7 +51,7 @@
   text-decoration: none !important;
   transition: opacity 0.3s;
   opacity: 0.9;
-  line-height: 1.4 !important;
+  line-height: 1.5 !important;
 }
 
 .footer-links a:hover {
@@ -61,9 +61,9 @@
 
 .contact-item {
   display: flex;
-  align-items: center;
+  align-items: start;
   gap: 10px;
-  line-height: 1.9 !important;
+  line-height: 1.7 !important;
   /* margin-bottom: 12px !important; */
   opacity: 0.9;
 }

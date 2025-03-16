@@ -217,6 +217,9 @@ background: linear-gradient(90deg, rgb(127, 123, 198) 0%, rgba(1,146,187,1) 49%,
 .mobile-menu .MuiListItem-root:nth-child(5) {
   animation-delay: 0.10s;
 }
+.mobile-menu .MuiListItem-root:nth-child(6) {
+  animation-delay: 1.4s;
+}
 
 /* Start the More menu item visible but off-screen */
 .more-menu-item {  
@@ -327,6 +330,7 @@ background: linear-gradient(90deg, rgb(127, 123, 198) 0%, rgba(1,146,187,1) 49%,
 
   .menu-icon {
     display: block !important;
+   
   }
 
   .toolbar {
@@ -341,7 +345,8 @@ background: linear-gradient(90deg, rgb(127, 123, 198) 0%, rgba(1,146,187,1) 49%,
 
 @media (max-width: 480px) {
   .logo {
-    height: 40px !important;
+    height: 60px !important;
+    width: 100px !important;
   }
 .logo-primary{
   font-size: 1rem !important;

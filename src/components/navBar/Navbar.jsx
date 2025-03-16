@@ -87,7 +87,7 @@ function Navbar() {
 
 <Box>
 <IconButton className="menu-icon" onClick={handleDrawerToggle}>
-          <MenuIcon />
+          <MenuIcon style={{fontSize:'35px'}}/>
         </IconButton>
 </Box>
 </Box>
@@ -136,7 +136,7 @@ function Navbar() {
       <Drawer anchor="right" open={mobileOpen} onClose={handleDrawerToggle}>
         <Box justifySelf={"flex-start"} className="menu-close-1">
           <IconButton onClick={handleDrawerToggle} className="close-menu-icon" sx={{ color: "red" }}>
-            <CloseIcon />
+            <CloseIcon style={{fontSize:'35px'}}/>
           </IconButton>
         </Box>
 
@@ -173,6 +173,11 @@ function Navbar() {
               <KeyboardArrowDownIcon />
               </ListItem>
 
+              <ListItem button onClick={handleDrawerToggle}>
+            <Link className="navLink" to={"/admission"}>
+              <ListItemText primary="Get Started " />
+            </Link>
+          </ListItem>
 
               <Collapse in={mobileMoreMenuOpen} timeout="auto" unmountOnExit>
   <List component="div" disablePadding className="slide-in-list">

@@ -1,5 +1,5 @@
 .admission {
-  margin-top: 60px !important;
+  margin-top: 30px !important;
   background: linear-gradient(135deg, #FF6B6B 0%, #4ECDC4 100%) !important;
   padding: 80px 20px !important;
   text-align: center !important;
@@ -25,7 +25,7 @@
   margin: 0 auto !important;
   display: flex !important;
   flex-wrap: wrap !important;
-  gap: 50px !important;
+  gap: 100px !important;
   justify-content: center !important;
   align-items: stretch !important;
   position: relative !important;
@@ -38,8 +38,8 @@
   min-width: 320px;
   max-width: 600px;
   background: rgba(255, 255, 255, 0.95);
-  padding: 40px;
-  border-radius: 30px;
+  padding: 20px !important;
+  border-radius: 10px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
   transform: translateY(0);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -58,7 +58,7 @@
   -webkit-background-clip: text !important;
   background-clip: text !important;
   color: transparent !important;
-  margin-bottom: 30px !important;
+  margin-bottom: 20px !important;
   line-height: 1.2 !important;
 }
 
@@ -105,7 +105,7 @@
   align-items: center;
   gap: 10px;
   padding: 12px;
-  font-weight: bold;
+  font-weight: bold !important;
   color: white;
   border-radius: 10px;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
@@ -175,8 +175,8 @@
   min-width: 320px;
   max-width: 450px;
   background: rgba(255, 255, 255, 0.95);
-  padding: 40px;
-  border-radius: 30px;
+  padding: 30px;
+  border-radius: 10px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
   backdrop-filter: blur(10px);
 }
@@ -185,12 +185,12 @@
   font-size: 2rem !important;
   font-weight: 700 !important;
   color: #2C3E50 !important;
-  margin-bottom: 30px !important;
+  margin-bottom: 20px !important;
   text-align: center !important;
 }
 
 .form-input {
-  margin-bottom: 25px !important;
+  margin-bottom: 23px !important;
   width: 100% !important;
 }
 
@@ -274,6 +274,10 @@
 @media (max-width: 480px) {
   .admission{
     margin-top: 50px !important;
+   gap: 0px !important;
+  }
+  .admission-inquiry{
+    gap: 50px !important;
   }
   .admission-title {
     font-size: 1.8rem !important;
@@ -286,9 +290,16 @@
   .button-container {
     flex-direction: column !important;
   }
-.programs-list{
-  
-  display: grid !important;
-  grid-template-columns: repeat(2, 1fr);
-}
+  .programs-list {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important; /* Two items per row */
+    padding: 10px;
+
+  }
+  .program-text{
+    font-size: 0.8rem !important;
+  }
+  .program-icon{
+    font-size: 1rem !important;
+  }
 }

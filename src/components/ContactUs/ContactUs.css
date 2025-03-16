@@ -1,9 +1,10 @@
 /* Background Styling */
 .background {
+ 
     background-color: aliceblue;
     padding: 0px 50px !important;
     min-height: 100vh;
-    margin-top: 20px !important;
+    margin-top: 80px !important;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -157,20 +158,55 @@
     flex-wrap: wrap;
 }
 
-.cantact-icons svg {
-    width: 35px !important;
-    height: 35px !important;
-    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
-    cursor: pointer;
-    color: #333 !important;
-}
 
-.cantact-icons svg:hover {
-    color: #ee186d !important;
-    transform: scale(1.2) !important;
-}
-
-/* Responsive Design */
+/* Social Icons Container */
+.contact-icons {
+    display: flex;
+    justify-content: start;
+    gap: 5px;
+    margin-top: 10px;
+  }
+  
+  /* Social Media Icons */
+  .contact-icons .MuiIconButton-root {
+   
+  background-color: rgba(12, 10, 10, 0.9);
+  margin: 0 8px !important;
+  transition: transform 0.3s, background-color 0.3s;
+  }
+  .contact-icons .MuiSvgIcon-root{
+    color: white !important;
+    width: 30px !important;
+    height: auto;
+  }
+  .contact-icons .MuiIconButton-root:hover {
+    background-color: #ee186d !important;
+    transform: translateY(-3px);
+  }
+  
+  /* Hover Effects */
+  .contact-icons .MuiIconButton-root:hover {
+    transform: scale(1.1);
+  }
+  
+/* Map Container */
+.map-container {
+    width: 100% !important;
+    /* height: 300px !important; */
+    border-radius: 10px !important;
+    overflow: hidden !important;
+    margin-top: 10px !important;
+  }
+  
+  .map-container iframe {
+    width: 70% !important;
+    height: 70% !important;
+    border: none !important;
+    border-radius: 10px !important;
+  }
+  
+  
+  
 @media (max-width: 1024px) {
     .contact-container {
         margin: 15px;
