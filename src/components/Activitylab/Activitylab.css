@@ -141,6 +141,11 @@
   h3 {
     font-size: 1.75rem;
   }
- 
+ .main-title-lab{
+  font-size: 2.5rem !important;
+ }
+ .subtitle-lab{
+  font-size: 1.4rem !important;
+ }
  
 }

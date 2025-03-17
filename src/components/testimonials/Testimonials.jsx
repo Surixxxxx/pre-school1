@@ -51,7 +51,7 @@ const Testimonials = () => {
    <p style={{color:'#fff'}}>Enim fermentum maecenas rutrum dapibus sodales quis.</p>
   </CustomContainer> */}
     <div className="testimonials-container1">
-      <Typography variant="h4" gutterBottom sx={{color:'rgba(24, 175, 225, 0.9)', textShadow: '2px 2px 4px rgba(5, 4, 3, 0.4)',fontWeight:'bold'}}>
+      <Typography variant="h4"className="testimonials-title" gutterBottom sx={{color:'rgba(24, 175, 225, 0.9)', textShadow: '2px 2px 4px rgba(5, 4, 3, 0.4)',fontWeight:'bold'}}>
         What Parents Say
       </Typography>
       <div className="testimonials-grid">

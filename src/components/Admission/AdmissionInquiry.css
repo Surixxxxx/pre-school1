@@ -1,3 +1,34 @@
+@keyframes slideFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.admission-content {
+  animation: slideFromLeft 1s ease-in-out;
+}
+
+.inquiry-form {
+  animation: slideFromRight 1s ease-in-out;
+}
+
+
 .admission {
   margin-top: 30px !important;
   background: linear-gradient(135deg, #FF6B6B 0%, #4ECDC4 100%) !important;
