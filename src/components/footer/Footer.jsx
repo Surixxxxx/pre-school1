@@ -3,6 +3,7 @@ import { Box, Container, Grid, Typography, IconButton, TextField, Button } from 
 import { Facebook, Twitter, Instagram, YouTube, Email, Phone, LocationOn } from "@mui/icons-material";
 import { Link } from "react-router-dom";
 import "./Footer.css";
+import { Public  } from "@mui/icons-material";
 
 const Footer = () => {
   return (
@@ -47,7 +48,7 @@ const Footer = () => {
                 <Phone /> 9972823113
               </Typography>
               <Typography className="contact-item">
-                <Email /> www.vidyarambhacademy.com
+                <Public  /> www.vidyarambhacademy.com
               </Typography>
             </Box>
           </Grid>

@@ -191,16 +191,16 @@
   
 /* Map Container */
 .map-container {
-    width: 100% !important;
-    /* height: 300px !important; */
+     /* width: 700px !important; */
+    height: 300px !important; 
     border-radius: 10px !important;
     overflow: hidden !important;
     margin-top: 10px !important;
   }
   
   .map-container iframe {
-    width: 70% !important;
-    height: 70% !important;
+    width: 90% !important;
+    height: 100% !important;
     border: none !important;
     border-radius: 10px !important;
   }

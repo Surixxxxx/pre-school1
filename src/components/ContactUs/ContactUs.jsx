@@ -1,6 +1,6 @@
 import React from "react";
 import { TextField, Button, Grid, Typography, Box, IconButton } from "@mui/material";
-import { LocationOn, Phone, Email, Facebook, Instagram, YouTube } from "@mui/icons-material";
+import { LocationOn, Phone, Email, Facebook, Instagram, YouTube, Public } from "@mui/icons-material";
 import "./ContactUs.css";
 
 const ContactUs = () => {
@@ -94,11 +94,11 @@ const ContactUs = () => {
                 <span className="address">9972823113</span>
               </p>
               <p>
-                <Email />
-                <span className="address">yourname@example.com</span>
+              <Public  /> 
+                <span className="address">www.vidyarambhacademy.com</span>
               </p>
             </div>
-
+  
             {/* Google Map Embed */}
             <Typography variant="h5" className="title map-title">
               Our Location
@@ -106,8 +106,7 @@ const ContactUs = () => {
             <div className="map-container">
             <iframe
   src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3888.2076584466195!2d77.47843507507619!3d12.95855998735563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTLCsDU3JzMwLjgiTiA3N8KwMjgnNTEuNiJF!5e0!3m2!1sen!2sin!4v1742181259287!5m2!1sen!2sin"
-  width="400"
-  height="300"
+  // width="500px"
   style={{ border: "0" }}
   allowFullScreen
   loading="lazy"
@@ -116,8 +115,8 @@ const ContactUs = () => {
 
             </div>
 
-            {/* Social Media Links */}
-            <Typography variant="h5" className="follow-title title" marginBottom={2} marginTop={2}>
+           
+            {/* <Typography variant="h5" className="follow-title title" marginBottom={2} marginTop={2}>
               Follow Us
             </Typography>
             <div className="contact-icons">
@@ -130,7 +129,7 @@ const ContactUs = () => {
               <IconButton component="a" href="https://www.youtube.com/@VidyarambhBalmandir" target="_blank" aria-label="YouTube">
                 <YouTube />
               </IconButton>
-            </div>
+            </div> */}
           </Box>
         </Box>
       </Box>
