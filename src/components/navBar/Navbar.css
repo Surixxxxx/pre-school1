@@ -338,7 +338,7 @@ background: linear-gradient(90deg, rgb(127, 123, 198) 0%, rgba(1,146,187,1) 49%,
   }
 
   .logo {
-    height: 45px;
+    height: 75px !important;
   }
 }
 

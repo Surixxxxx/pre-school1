@@ -173,11 +173,7 @@ function Navbar() {
               <KeyboardArrowDownIcon />
               </ListItem>
 
-              <ListItem button onClick={handleDrawerToggle}>
-            <Link className="navLink" to={"/admission"}>
-              <ListItemText primary="Get Started " />
-            </Link>
-          </ListItem>
+             
 
               <Collapse in={mobileMoreMenuOpen} timeout="auto" unmountOnExit>
   <List component="div" disablePadding className="slide-in-list">
@@ -215,9 +211,15 @@ function Navbar() {
         primaryTypographyProps={{ style: { lineHeight: '0.5',fontWeight: 550} }} 
       />
     </ListItem>
+    
   </List>
+  
 </Collapse>
-
+<ListItem button onClick={handleDrawerToggle}>
+            <Link className="navLink" to={"/admission"}>
+              <ListItemText primary="Get Started " />
+            </Link>
+          </ListItem>
         </List>
       </Drawer>
     </AppBar>

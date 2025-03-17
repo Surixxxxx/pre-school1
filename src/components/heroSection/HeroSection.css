@@ -402,21 +402,21 @@
   }
 
   .toy1 {
-    left: -6%;
-    width: 80px;
+    left: -9% !important;
+    width: 90px !important;
   }
 
   .toy2 {
-    right: -6%;
-    width: 80px;
+    right: -7% !important;
+    width: 90px !important;
   }
   .highlight-text{
     font-size: 1.5rem !important;
   }
 
   .gradient-text {
-    font-size: 80px !important;
-    margin: 20px !important;
+    font-size: 75px !important;
+    margin: 10px !important;
     
   }
 
@@ -445,18 +445,40 @@
   .image-container {
     width: 100% !important;
     padding: 11px 0 !important;
-    margin-top: 10px !important;
+    margin-top: 0px !important;
     justify-self: center !important;
-    margin-bottom: 0px !important;
+    margin-bottom: 10px !important;
   }
 
   .background-img {
       max-width: 90% !important;
-    height: 40vh;
+    height: 45vh;
     margin-top: 20px;
     margin-bottom: 20px !important;
 } 
  }
+
+ 
+ @media (max-width: 768px) {
+  .hero {
+    width: 100% !important;
+  }
+
+  .hero-container {
+    width: 100% !important;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .hero-content {
+    padding: 10px;
+  }
+  .gradient-text{
+    font-size: 70px !important;
+  }
+
+ }
+
 @media (max-width: 568px) {
   .toy1 {
     top: 0px !important;

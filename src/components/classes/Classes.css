@@ -3,7 +3,7 @@
 .classes-page {
   text-align: center;
   padding: 20px;
-  margin-top: 70px;
+  margin-top: 80px;
   background: #f9f9f9; 
   height: 100%;
 }
@@ -184,6 +184,9 @@
 
 
 @media (max-width: 768px) {
+  .classes-page{
+    margin-top: 100px !important;
+  }
   .classes-grid {
       padding: 0px 20px !important;
       padding-bottom: 20px !important;
@@ -204,7 +207,7 @@
 }
 @media (max-width: 567px){
   .classes-page{
-    margin-top: 70px !important;
+    margin-top: 85px !important;
   }
   .classes-grid{
   display: grid !important;

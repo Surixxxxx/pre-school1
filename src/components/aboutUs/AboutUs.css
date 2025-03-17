@@ -23,6 +23,7 @@
   position: relative;
   isolation: isolate;
   overflow: hidden;
+  margin-top: 10px !important;
 }
 
 .about-container::before {
