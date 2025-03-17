@@ -481,7 +481,7 @@
 
 @media (max-width: 568px) {
   .toy1 {
-    top: 0px !important;
+    top: 10px !important;
     left: 0% !important;
     width: 70px !important;
   }
@@ -493,6 +493,7 @@
   }
 
   .hero {
+    margin-top: 10px;
     padding: 0px !important;
     width: 100vw !important;
     
