@@ -199,7 +199,7 @@
   }
   
   .map-container iframe {
-    width: 90% !important;
+    width: 100% !important;
     height: 100% !important;
     border: none !important;
     border-radius: 10px !important;
