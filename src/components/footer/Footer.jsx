@@ -48,6 +48,9 @@ const Footer = () => {
                 <Phone /> 9972823113
               </Typography>
               <Typography className="contact-item">
+              <Email  />  vidyarambhbalmandir@gmail.com
+              </Typography>
+              <Typography className="contact-item">
                 <Public  /> www.vidyarambhacademy.com
               </Typography>
             </Box>

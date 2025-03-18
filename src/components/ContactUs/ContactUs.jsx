@@ -94,8 +94,8 @@ const ContactUs = () => {
                 <span className="address">9972823113</span>
               </p>
               <p>
-              <Public  /> 
-                <span className="address">www.vidyarambhacademy.com</span>
+              <Email  /> 
+                <span className="address">vidyarambhbalmandir@gmail.com</span>
               </p>
             </div>
   
